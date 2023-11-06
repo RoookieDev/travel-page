@@ -1,0 +1,954 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,ul,.row{
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+/*title style*/
+#title{
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Montserrat',sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#title::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 50%;
+  background: #888;
+}
+#title span{
+  position: relative;
+  padding: 0px 10px;
+  background: #333;
+}
+
+
+/*Title style end here*/
+.menu-bx{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  padding:20px 10px;
+  background: rgba(0,0,0,0.8);
+  z-index: 22;
+  display: none;
+}
+.menu-bx .inner_con{
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.menu-bx .inner_con .logo{
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+.menu-bx .inner_con .logo h4{
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #222;
+}
+.menu-bx .inner_con .link-btn{
+  position: relative;
+  width: 100%;
+  text-align: right;
+  display: grid;
+  align-content: center;
+  justify-items:end;
+}
+.menu-bx .inner_con .link-btn a{
+  padding: 6px 15px;
+  position: relative;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.video_bx{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: none;
+  padding: 0;
+}
+.video_bx video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: .85;
+
+}
+.video_bx .text-bx{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.video_bx .text-bx h5{
+  position: relative;
+  width: 100%;
+  font-family: 'Bad script',sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: black;
+}
+.video_bx .text-bx h1{
+  width: 100%;
+  font-size: 3em;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: seagreen;
+}
+.video_bx .text-bx p{
+  position: relative;
+  width: 100%;
+  font-family: 'poppins',sans-serif;
+  color: black;
+  margin-bottom: 20px;
+  padding:0px 20px;
+}
+.video_bx .text-bx .btn-bx{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.video_bx .text-bx button{
+  position: relative;
+  width: auto;
+  margin: 0px 5px;
+  padding: 10px 20px;
+  border: 02px solid seagreen;
+  background: none;
+  outline: none;
+  background:white;
+  color: seagreen;
+}
+
+/* Video con end here  */
+
+.card-bx{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: grid;
+  align-content: center;
+  background: #333;
+  padding: 30px 10px;
+}
+.card-bx .card_con{
+  position: relative;
+  width: 100%;
+  padding: 16px 16px;
+  perspective: 1000px;
+}
+.card-bx .card_con .card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 1);
+  background: none;
+  border-radius: 10px;
+}
+.card-bx .card_con .card .img-bx{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.card-bx .card_con .card .img-bx img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-bx .card_con .card .text-bx{
+  position: relative;
+  padding:30px 15px;
+  text-align: center;
+  background: #fff;
+  color: #222;
+  border-radius: 0px 0px 10px 10px;
+
+}
+.card-bx .card_con .card .text-bx h4{
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-family: 'Montserrat',sans-serif;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.card-bx .card_con .card .text-bx p{
+  position: relative;
+  width: 100%;
+  margin-bottom: 0px;
+  font-size: 1em;
+  font-family: 'raleway',sans-serif;
+  font-weight: 300;
+  padding: 0px 10px;
+}
+.card-bx .card_con .card  button{
+  position: absolute;
+  right:0px;
+  top: 80%;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: none;
+  background: green;
+  border: none;
+  color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  display: grid;
+  align-content: center;
+  justify-items:center;
+  border:3px solid white;
+  background: #333;
+  opacity: 0;
+  transition: 0.3s ease;
+  outline: none
+}
+.card-bx .card_con .card:hover button{
+  opacity: 1;
+  right: -20px;
+}
+.card-bx .card_con .card:hover button:hover{
+  background: seagreen;
+}
+/*Card-bx end here*/
+
+
+.gallery{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: #333;
+  color: whitesmoke;
+}
+
+.gallery .big-img{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 0;
+  background: red;
+}
+.gallery .big-img img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+.gallery .big-img .text-bx{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding: 0px;
+}
+.gallery .big-img  h4{
+  position: relative;
+  width: 100%;
+  padding: 30px 0px;
+}
+.gallery .big-img h4 span{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'montserrat',sans-serif;
+}
+
+.gallery .card-con{
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+}
+.gallery .small-img{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  padding: 10px 10px;
+}
+
+.gallery .small-img .card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+  margin-bottom: 0px;
+  border-radius: 0;
+  border: none;
+  padding: 0px;
+}
+.gallery .small-img .card img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/*Gallery end here*/
+
+.services{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px;
+  background: #333;
+  color: #fff;
+ 
+}
+
+.services .service_bx{
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.services .service_bx .text-bx{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  padding: 0px 20px;
+  text-align: left;
+}
+.services .service_bx .text-bx h5{
+  position: relative;
+  width: 100%;
+  font-family: 'bad script',sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.services .service_bx .text-bx h1{
+  position: relative;
+  width: 100%;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: rgb(255, 122, 255);
+  letter-spacing: 3px;
+}
+.services .service_bx .text-bx h6{
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+.services .service_bx .text-bx p{
+  position: relative;
+  width: 100%;
+  font-family: 'raleway',sans-serif;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+.services .service_bx .text-bx button{
+  position: relative;
+  width: auto;
+  padding: 6px 15px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+
+}
+
+.services .service_bx .text-bx button:hover{
+  background: white;
+  color: #000;
+}
+
+.services .service_bx .img-bx{
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.services .service_bx .img-bx img{
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Srvices end here*/
+
+
+
+
+.packages{
+  position: relative;
+  width: 100%;
+  padding: 40px 10px;
+  background: #333;
+}
+.packages .card-con{
+  position: relative;
+  width: 100%;
+  padding: 10px 30px;
+}
+.packages .card-con .card{
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  border: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  background: none;
+  transition: 0.3s ease-in-out;
+}
+.packages .card-con .card h3{
+  position: relative;
+  width: 100%;
+  padding:15px 20px;
+  background:none;
+  font-size: 1.2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+}
+.packages .card-con .card .text-bx{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  text-align: left;
+}
+.packages .card-con .card .text-bx li{
+  list-style: none;
+  padding: 10px;
+}
+.packages .card-con .card a{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: rgb(13, 13, 13);
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: default;
+}
+.packages .card-con .card button{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 05px;
+  bottom: 20%;
+  border-radius: 100px;
+  display: grid;
+  align-content: center;
+  border: 2px solid white;
+  background: #333;
+  color: white;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+.packages .card-con .card:hover button{
+  opacity: 1;
+  right: -20px;
+}
+.packages .card-con .card button:hover{
+  background: seagreen;
+}
+
+.packages .card-con .card.active{
+  z-index: 1;
+  transform: scale(1.16);
+}
+/*Package con end here*/
+
+
+
+
+.testimonial{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.testimonial .text-bx{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  padding:40px 20px;
+  background: #f2f2f2;
+}
+.testimonial .text-bx h5{
+  position: relative;
+  width: 100%;
+  font-size: 1.4em;
+  font-family: 'dancing script',sans-serif;
+}
+.testimonial .text-bx h1{
+  position: relative;
+  width: 100%;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'MOntserrat',sans-serif;
+  letter-spacing: 10px;
+}
+
+.testimonial .carousel,.testimonial .carousel .carousel-inner{
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.testimonial .carousel .carousel-inner .carousel-item{
+  position: relative;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.testimonial .carousel .toggle-btn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding:10px 20px;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial .carousel .toggle-btn a{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  opacity: 1;
+  color: #333;
+  border: 2px solid #f2f2f2;
+  border-radius: 100%;
+}
+.testimonial .carousel .toggle-btn a:hover{
+  border-color: lightgrey;
+}
+.testimonial .feedback-bx{
+  position: relative;
+  width: 100%;
+  background: none;
+  padding: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 10px;
+  background: white;
+}
+.testimonial .feedback-bx .card-con{
+  position: relative;
+  width: 100%;
+  background: none;
+  border: 0px solid whitesmoke;
+  padding: 20px 50px;
+  background: white;
+}
+.testimonial .feedback-bx .card-con .profile{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.testimonial .feedback-bx .card-con .profile img{
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+.testimonial .feedback-bx .card-con .profile h5{
+  position: relative;
+  width: 100%;
+  font-family: 'MOntserrat',sans-serif;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.testimonial .feedback-bx .card-con .feedback{
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 10px 0px;
+}
+.testimonial .feedback-bx .card-con .feedback i{
+  font-size: 3em;
+  position: relative;
+  margin-bottom: 10px;
+}
+.testimonial .feedback-bx .card-con .feedback p{
+ position: relative;
+ width: 100%;
+ font-size: 1.1em;
+ font-family: 'Montserrat',sans-serif;
+}
+
+.testimonial .content-bx{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
+  background: #f4f4f4;
+}
+.testimonial .content-bx h6{
+  position: relative;
+  width: 100%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.testimonial .icon-bx{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.testimonial .icon-bx a{
+  position: relative;
+  width: auto;
+  text-decoration: none;
+  margin: 5px;
+  
+}
+.testimonial .icon-bx a i{
+  font-size: 1.2em;
+  color: #555;
+}
+.testimonial .icon-bx a:hover i{
+  transform: scale(1.1);
+  color: black;
+}
+/*Testimonail end here*/
+
+
+
+
+
+.contact-con{
+  position: relative;
+  width: 100%;
+  padding: 20px 0px;
+  background: white;
+}
+.contact-con::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #f4f4f4;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+
+}
+.contact-con:hover:before{
+  height: 100%;
+}
+.contact-con .map-bx{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding:10px 10px;
+}
+.contact-con .map-bx iframe{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contact-con .form-bx{
+  position: relative;
+  width: 100%;
+  padding:10px 30px;
+  display: grid;
+  align-content: center;
+  text-align: left;
+}
+.contact-con .form-bx h2{
+  position: relative;
+  width: 100%;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.contact-con .form-bx form{
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: left;
+}
+.contact-con .form-bx form input{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #666;
+  background: white;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+.contact-con .form-bx form input:focus{
+  border-color: rgb(2, 202, 2);
+}
+.contact-con .form-bx form textarea{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  border: 2px solid #666;
+  background: white;
+  outline: none;
+  
+}
+.contact-con .form-bx form textarea:focus{
+  border-color: rgb(2, 202, 2);
+}
+.contact-con .form-bx form button{
+  position: relative;
+  width: auto;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  border: none;
+  background: #333;
+  color: white;
+  letter-spacing: 0px;
+  font-family: 'Montserrat',sans-serif;
+}
+.contact-con .form-bx form button:hover{
+  background: rgb(2, 155, 2);
+}
+
+
+.contact-con .card-holder{
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.contact-con .card-holder .card-con{
+  position: relative;
+  width: 100%;
+  padding:10px 20px;
+}
+.contact-con .card-holder .card-con .card{
+  position: relative;
+  padding: 0px;
+  border: none;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background: none;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.contact-con .card-holder .card-con .card:hover{
+  transform: scale(0.9);
+}
+.contact-con .card-holder .card-con .card h5{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'raleway',sans-serif;
+  letter-spacing: 2px;
+  border-radius: 10px 10px 0px 0px;
+}
+.contact-con .card-holder .card-con .card p{
+  position: relative;
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+  background: none;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  padding: 30px 10px;
+  background: #555;
+  color: white;
+}
+.footer .menu-list{
+  position: relative;
+  width: 100%;
+  padding: 10px 20px;
+}
+.footer .menu-list h5{
+  position: relative;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat',sans-serif;
+  letter-spacing: 2px;
+}
+.footer .menu-list ul{
+  padding: 0px;
+}
+.footer .menu-list ul li{
+ list-style: none;
+ padding: 5px 0px;
+}
+.footer .menu-list ul li a{
+  text-decoration: none;
+  color: #d2d2d2;
+}
+.footer .menu-list form{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+  text-align: left;
+  
+}
+.footer .menu-list form h3{
+  position: relative;
+  width: 100%;
+  font-family: 'Raleway',sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.footer .menu-list form input{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 2px solid white;
+  background: none;
+  outline: none;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer .menu-list form input::placeholder{
+  color: #d2d2d2;
+
+}
+.footer .menu-list form input:focus{
+  border-color: rgb(113, 255, 113);
+}
+.footer .menu-list form button{
+  position: relative;
+  width: auto;
+  padding: 6px 15px;
+  border: none;
+  background: rgb(1, 186, 1);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.footer .menu-list form button:hover{
+  opacity: 1;
+}
+
+.footer .link-bx{
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+}
+.footer .link-bx h4{
+  position: relative;
+  width: 100%;
+  font-weight: 300;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+}
+.footer .link-bx h4 span{
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 1.1em;
+}
+.footer .link-bx .icon-bx{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.footer .link-bx .icon-bx a{
+  margin: 5px;
+  font-size: 1.3em;
+}
+.footer .link-bx .icon-bx a i{
+  color: #aaa;
+  transition: 0.2s ease-in-out;
+}
+.footer .link-bx .icon-bx a:hover i{
+  transform: scale(1.1);
+  color: #fff;
+}
